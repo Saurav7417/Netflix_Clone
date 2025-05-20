@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#main{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#sidebar{
+    height: 740px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar .logos img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+#name{
+    height: 450px;
+    width: 380px;
+    position: relative;
+    background-color: #000000;
+}
+
+#name #netflix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translate(0px,30px);
+    z-index: 1;
+}
+
+#name #netflix_logo{
+    position: absolute;
+    height: 30px;
+    width: 20px;
+    top: 70px;
+    left: 45px;
+}
+
+#name #imdb1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#name #imdb{
+    position: absolute;
+    height: 17px;
+    width: 38px;
+    top: 300px;
+    left: 50px;
+}
+
+#name #ser-name{
+    height: 200px;
+    width: 380px;
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+}
+
+#name button{
+    transform: translate(20px, 400px);
+}
+
+#backimg{
+    height: 450px;
+    width: 70%;
+    position: absolute;
+    right: 0;
+}
+
+
+#backimg img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#backimg video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;    
+}
+
+#play{
+    background-color: red;
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+    height: 38px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+#watch{
+    border-radius: 50px;
+    height: 38px;
+    width: 100px;
+    border-style: none;
+    color: rgb(61, 50, 50);
+}
+
+#movies{
+    height: 230px;
+    width: 96%;
+    position: absolute;
+    transform: translate(100px,-230px);
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+#movies::-webkit-scrollbar {
+  display: none;            
+}
+
+.movie{
+    height: 100%;
+    width: 180px;
+    display: inline-block;
+    margin-right: 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+.movie img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#movies2{
+    height: 230px;
+    width: 96%;
+    position: relative;
+    top: 65px;
+    left: 100px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#movies2::-webkit-scrollbar{
+    display: none;
+}
